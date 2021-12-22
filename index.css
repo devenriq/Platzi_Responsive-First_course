@@ -381,3 +381,91 @@ main {
   line-height: 1.8rem;
   color: #75757575;
 }
+
+.plans-container--slider{
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+.plans-container--card {
+  position: relative;
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px 30px 0;
+  padding: 0 15px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89,73,30,0.16)
+}
+
+.recommended {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  top: -15px;
+  background-color: orange;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: white;
+  left: calc(50% - 60px);
+  padding: 8px;
+}
+
+.plan-card--title {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: black
+}
+
+.plan-card--price {
+  padding: 5px 0;
+  font-size: 5.2rem;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.plan-card--price span{
+  font-size: 1.2rem;
+  font-weight: 300;
+  top: 50px;
+  display: inline-block;
+
+}
+
+.plan-card--saving {
+  font-size: 1.2rem;
+  color: #757575;
+}
+
+.plan-card--call-to-action{
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background-color: var(--off-white);
+  border: 2px solid var(--orange);
+  border-radius: 4px;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: black;
+  font-family: "DM Sans", sans-serif;
+}
+
+.plan-card--call-to-action span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("./assets/icons/orange-right-arrow.svg");
+  vertical-align: text-bottom;
+}
+
